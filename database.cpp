@@ -12,12 +12,10 @@ void Database::Add(Date date, const string &event) {
   if (finded == notes.end() || finded->date != date) {
     auto inserted = notes.insert(Note(date, event));
     inserted.first->eventsTree.insert(event);
-  } else {
-    if (finded->eventsTree.upper_bound(event) ==
-        finded->eventsTree.lower_bound(event)) {
-      finded->events.push_back(event);
-      finded->eventsTree.insert(event);
-    }
+  } else if (finded->eventsTree.upper_bound(event) ==
+             finded->eventsTree.lower_bound(event)) {
+    finded->events.push_back(event);
+    finded->eventsTree.insert(event);
   }
 }
 
@@ -31,19 +29,20 @@ int Database::RemoveIf(const function<bool(Date, string)> &pred) {
   int count = 0;
   for (auto note = notes.begin(); note != notes.end(); note++) {
     auto thisDate = note->date;
-    auto firstGood = stable_partition(note->events.begin(), note->events.end(),
-                                     [thisDate, pred](const string &event) {
-                                       return pred(thisDate, event);
-                                     });
-    for (auto item = note->events.begin(); item != firstGood; item++) {
+    auto firstBad =
+        stable_partition(note->events.begin(), note->events.end(),
+                         [thisDate, pred](const string &event) {
+                           return !pred(thisDate, event);
+                         });
+    for (auto item = firstBad; item != note->events.end(); item++) {
       note->eventsTree.erase(*item);
       count++;
     }
-    note->events.erase(note->events.begin(), firstGood);
+    note->events.erase(firstBad, note->events.end());
   }
   auto item = notes.begin();
   while (item != notes.end()) {
-    if(item->events.empty()) {
+    if (item->events.empty()) {
       item = notes.erase(item);
     } else {
       item++;
