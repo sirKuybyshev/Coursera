@@ -59,10 +59,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/timofey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6397.106/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/timofey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6948.80/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/timofey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6397.106/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/timofey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6948.80/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/timofey/CLionProjects/Coursera/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/timofey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6397.106/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/timofey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6948.80/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/timofey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6397.106/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/timofey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6948.80/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -143,6 +143,114 @@ Coursera/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/build
 .PHONY : Coursera/fast
 
+condition_parser.o: condition_parser.cpp.o
+
+.PHONY : condition_parser.o
+
+# target to build an object file
+condition_parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/condition_parser.cpp.o
+.PHONY : condition_parser.cpp.o
+
+condition_parser.i: condition_parser.cpp.i
+
+.PHONY : condition_parser.i
+
+# target to preprocess a source file
+condition_parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/condition_parser.cpp.i
+.PHONY : condition_parser.cpp.i
+
+condition_parser.s: condition_parser.cpp.s
+
+.PHONY : condition_parser.s
+
+# target to generate assembly for a file
+condition_parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/condition_parser.cpp.s
+.PHONY : condition_parser.cpp.s
+
+condition_parser_test.o: condition_parser_test.cpp.o
+
+.PHONY : condition_parser_test.o
+
+# target to build an object file
+condition_parser_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/condition_parser_test.cpp.o
+.PHONY : condition_parser_test.cpp.o
+
+condition_parser_test.i: condition_parser_test.cpp.i
+
+.PHONY : condition_parser_test.i
+
+# target to preprocess a source file
+condition_parser_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/condition_parser_test.cpp.i
+.PHONY : condition_parser_test.cpp.i
+
+condition_parser_test.s: condition_parser_test.cpp.s
+
+.PHONY : condition_parser_test.s
+
+# target to generate assembly for a file
+condition_parser_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/condition_parser_test.cpp.s
+.PHONY : condition_parser_test.cpp.s
+
+database.o: database.cpp.o
+
+.PHONY : database.o
+
+# target to build an object file
+database.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/database.cpp.o
+.PHONY : database.cpp.o
+
+database.i: database.cpp.i
+
+.PHONY : database.i
+
+# target to preprocess a source file
+database.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/database.cpp.i
+.PHONY : database.cpp.i
+
+database.s: database.cpp.s
+
+.PHONY : database.s
+
+# target to generate assembly for a file
+database.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/database.cpp.s
+.PHONY : database.cpp.s
+
+date.o: date.cpp.o
+
+.PHONY : date.o
+
+# target to build an object file
+date.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/date.cpp.o
+.PHONY : date.cpp.o
+
+date.i: date.cpp.i
+
+.PHONY : date.i
+
+# target to preprocess a source file
+date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/date.cpp.i
+.PHONY : date.cpp.i
+
+date.s: date.cpp.s
+
+.PHONY : date.s
+
+# target to generate assembly for a file
+date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/date.cpp.s
+.PHONY : date.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -170,6 +278,60 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+node.o: node.cpp.o
+
+.PHONY : node.o
+
+# target to build an object file
+node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/node.cpp.o
+.PHONY : node.cpp.o
+
+node.i: node.cpp.i
+
+.PHONY : node.i
+
+# target to preprocess a source file
+node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/node.cpp.i
+.PHONY : node.cpp.i
+
+node.s: node.cpp.s
+
+.PHONY : node.s
+
+# target to generate assembly for a file
+node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/node.cpp.s
+.PHONY : node.cpp.s
+
+token.o: token.cpp.o
+
+.PHONY : token.o
+
+# target to build an object file
+token.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/token.cpp.o
+.PHONY : token.cpp.o
+
+token.i: token.cpp.i
+
+.PHONY : token.i
+
+# target to preprocess a source file
+token.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/token.cpp.i
+.PHONY : token.cpp.i
+
+token.s: token.cpp.s
+
+.PHONY : token.s
+
+# target to generate assembly for a file
+token.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Coursera.dir/build.make CMakeFiles/Coursera.dir/token.cpp.s
+.PHONY : token.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,9 +341,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Coursera"
+	@echo "... condition_parser.o"
+	@echo "... condition_parser.i"
+	@echo "... condition_parser.s"
+	@echo "... condition_parser_test.o"
+	@echo "... condition_parser_test.i"
+	@echo "... condition_parser_test.s"
+	@echo "... database.o"
+	@echo "... database.i"
+	@echo "... database.s"
+	@echo "... date.o"
+	@echo "... date.i"
+	@echo "... date.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... node.o"
+	@echo "... node.i"
+	@echo "... node.s"
+	@echo "... token.o"
+	@echo "... token.i"
+	@echo "... token.s"
 .PHONY : help
 
 

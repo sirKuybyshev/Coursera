@@ -4,7 +4,7 @@
 #include <sstream>
 using namespace std;
 
-void TestParseCondition() {
+ void TestParseCondition() {
   {
     istringstream is("date != 2017-11-18");
     shared_ptr<Node> root = ParseCondition(is);
@@ -38,7 +38,8 @@ void TestParseCondition() {
     shared_ptr<Node> root = ParseCondition(is);
     Assert(!root->Evaluate({2017, 11, 18}, "holiday"), "Parse condition 13");
     Assert(!root->Evaluate({2017, 11, 18}, "work day"), "Parse condition 14");
-    Assert(root->Evaluate({1, 1, 1}, "holiday AND date == 2017-11-18"), "Parse condition 15");
+    Assert(root->Evaluate({1, 1, 1}, "holiday AND date == 2017-11-18"),
+           "Parse condition 15");
   }
   {
     istringstream is(R"(((event == "holiday" AND date == 2017-01-01)))");
@@ -47,7 +48,8 @@ void TestParseCondition() {
     Assert(!root->Evaluate({2017, 1, 2}, "holiday"), "Parse condition 17");
   }
   {
-    istringstream is(R"(date > 2017-01-01 AND (event == "holiday" OR date < 2017-07-01))");
+    istringstream is(
+        R"(date > 2017-01-01 AND (event == "holiday" OR date < 2017-07-01))");
     shared_ptr<Node> root = ParseCondition(is);
     Assert(!root->Evaluate({2016, 1, 1}, "holiday"), "Parse condition 18");
     Assert(root->Evaluate({2017, 1, 2}, "holiday"), "Parse condition 19");
@@ -55,7 +57,8 @@ void TestParseCondition() {
     Assert(!root->Evaluate({2018, 1, 2}, "workday"), "Parse condition 21");
   }
   {
-    istringstream is(R"(date > 2017-01-01 AND event == "holiday" OR date < 2017-07-01)");
+    istringstream is(
+        R"(date > 2017-01-01 AND event == "holiday" OR date < 2017-07-01)");
     shared_ptr<Node> root = ParseCondition(is);
     Assert(root->Evaluate({2016, 1, 1}, "event"), "Parse condition 22");
     Assert(root->Evaluate({2017, 1, 2}, "holiday"), "Parse condition 23");

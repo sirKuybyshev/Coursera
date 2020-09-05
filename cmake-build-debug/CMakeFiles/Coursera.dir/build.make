@@ -54,10 +54,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/timofey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6397.106/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/timofey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6948.80/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/timofey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6397.106/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/timofey/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6948.80/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -90,17 +90,107 @@ CMakeFiles/Coursera.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Coursera.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/timofey/CLionProjects/Coursera/main.cpp -o CMakeFiles/Coursera.dir/main.cpp.s
 
+CMakeFiles/Coursera.dir/date.cpp.o: CMakeFiles/Coursera.dir/flags.make
+CMakeFiles/Coursera.dir/date.cpp.o: ../date.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/timofey/CLionProjects/Coursera/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Coursera.dir/date.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Coursera.dir/date.cpp.o -c /home/timofey/CLionProjects/Coursera/date.cpp
+
+CMakeFiles/Coursera.dir/date.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Coursera.dir/date.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/timofey/CLionProjects/Coursera/date.cpp > CMakeFiles/Coursera.dir/date.cpp.i
+
+CMakeFiles/Coursera.dir/date.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Coursera.dir/date.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/timofey/CLionProjects/Coursera/date.cpp -o CMakeFiles/Coursera.dir/date.cpp.s
+
+CMakeFiles/Coursera.dir/database.cpp.o: CMakeFiles/Coursera.dir/flags.make
+CMakeFiles/Coursera.dir/database.cpp.o: ../database.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/timofey/CLionProjects/Coursera/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Coursera.dir/database.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Coursera.dir/database.cpp.o -c /home/timofey/CLionProjects/Coursera/database.cpp
+
+CMakeFiles/Coursera.dir/database.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Coursera.dir/database.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/timofey/CLionProjects/Coursera/database.cpp > CMakeFiles/Coursera.dir/database.cpp.i
+
+CMakeFiles/Coursera.dir/database.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Coursera.dir/database.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/timofey/CLionProjects/Coursera/database.cpp -o CMakeFiles/Coursera.dir/database.cpp.s
+
+CMakeFiles/Coursera.dir/node.cpp.o: CMakeFiles/Coursera.dir/flags.make
+CMakeFiles/Coursera.dir/node.cpp.o: ../node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/timofey/CLionProjects/Coursera/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Coursera.dir/node.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Coursera.dir/node.cpp.o -c /home/timofey/CLionProjects/Coursera/node.cpp
+
+CMakeFiles/Coursera.dir/node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Coursera.dir/node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/timofey/CLionProjects/Coursera/node.cpp > CMakeFiles/Coursera.dir/node.cpp.i
+
+CMakeFiles/Coursera.dir/node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Coursera.dir/node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/timofey/CLionProjects/Coursera/node.cpp -o CMakeFiles/Coursera.dir/node.cpp.s
+
+CMakeFiles/Coursera.dir/condition_parser.cpp.o: CMakeFiles/Coursera.dir/flags.make
+CMakeFiles/Coursera.dir/condition_parser.cpp.o: ../condition_parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/timofey/CLionProjects/Coursera/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Coursera.dir/condition_parser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Coursera.dir/condition_parser.cpp.o -c /home/timofey/CLionProjects/Coursera/condition_parser.cpp
+
+CMakeFiles/Coursera.dir/condition_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Coursera.dir/condition_parser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/timofey/CLionProjects/Coursera/condition_parser.cpp > CMakeFiles/Coursera.dir/condition_parser.cpp.i
+
+CMakeFiles/Coursera.dir/condition_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Coursera.dir/condition_parser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/timofey/CLionProjects/Coursera/condition_parser.cpp -o CMakeFiles/Coursera.dir/condition_parser.cpp.s
+
+CMakeFiles/Coursera.dir/token.cpp.o: CMakeFiles/Coursera.dir/flags.make
+CMakeFiles/Coursera.dir/token.cpp.o: ../token.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/timofey/CLionProjects/Coursera/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Coursera.dir/token.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Coursera.dir/token.cpp.o -c /home/timofey/CLionProjects/Coursera/token.cpp
+
+CMakeFiles/Coursera.dir/token.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Coursera.dir/token.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/timofey/CLionProjects/Coursera/token.cpp > CMakeFiles/Coursera.dir/token.cpp.i
+
+CMakeFiles/Coursera.dir/token.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Coursera.dir/token.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/timofey/CLionProjects/Coursera/token.cpp -o CMakeFiles/Coursera.dir/token.cpp.s
+
+CMakeFiles/Coursera.dir/condition_parser_test.cpp.o: CMakeFiles/Coursera.dir/flags.make
+CMakeFiles/Coursera.dir/condition_parser_test.cpp.o: ../condition_parser_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/timofey/CLionProjects/Coursera/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Coursera.dir/condition_parser_test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Coursera.dir/condition_parser_test.cpp.o -c /home/timofey/CLionProjects/Coursera/condition_parser_test.cpp
+
+CMakeFiles/Coursera.dir/condition_parser_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Coursera.dir/condition_parser_test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/timofey/CLionProjects/Coursera/condition_parser_test.cpp > CMakeFiles/Coursera.dir/condition_parser_test.cpp.i
+
+CMakeFiles/Coursera.dir/condition_parser_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Coursera.dir/condition_parser_test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/timofey/CLionProjects/Coursera/condition_parser_test.cpp -o CMakeFiles/Coursera.dir/condition_parser_test.cpp.s
+
 # Object files for target Coursera
 Coursera_OBJECTS = \
-"CMakeFiles/Coursera.dir/main.cpp.o"
+"CMakeFiles/Coursera.dir/main.cpp.o" \
+"CMakeFiles/Coursera.dir/date.cpp.o" \
+"CMakeFiles/Coursera.dir/database.cpp.o" \
+"CMakeFiles/Coursera.dir/node.cpp.o" \
+"CMakeFiles/Coursera.dir/condition_parser.cpp.o" \
+"CMakeFiles/Coursera.dir/token.cpp.o" \
+"CMakeFiles/Coursera.dir/condition_parser_test.cpp.o"
 
 # External object files for target Coursera
 Coursera_EXTERNAL_OBJECTS =
 
 Coursera: CMakeFiles/Coursera.dir/main.cpp.o
+Coursera: CMakeFiles/Coursera.dir/date.cpp.o
+Coursera: CMakeFiles/Coursera.dir/database.cpp.o
+Coursera: CMakeFiles/Coursera.dir/node.cpp.o
+Coursera: CMakeFiles/Coursera.dir/condition_parser.cpp.o
+Coursera: CMakeFiles/Coursera.dir/token.cpp.o
+Coursera: CMakeFiles/Coursera.dir/condition_parser_test.cpp.o
 Coursera: CMakeFiles/Coursera.dir/build.make
 Coursera: CMakeFiles/Coursera.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/timofey/CLionProjects/Coursera/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Coursera"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/timofey/CLionProjects/Coursera/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Coursera"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Coursera.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

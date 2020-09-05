@@ -84,7 +84,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/timofey/CLionProjects/Coursera/condition_parser.cpp">
+			<Option target="Coursera"/>
+		</Unit>
+		<Unit filename="/home/timofey/CLionProjects/Coursera/condition_parser.h">
+			<Option target="Coursera"/>
+		</Unit>
+		<Unit filename="/home/timofey/CLionProjects/Coursera/condition_parser_test.cpp">
+			<Option target="Coursera"/>
+		</Unit>
+		<Unit filename="/home/timofey/CLionProjects/Coursera/database.cpp">
+			<Option target="Coursera"/>
+		</Unit>
+		<Unit filename="/home/timofey/CLionProjects/Coursera/database.h">
+			<Option target="Coursera"/>
+		</Unit>
+		<Unit filename="/home/timofey/CLionProjects/Coursera/date.cpp">
+			<Option target="Coursera"/>
+		</Unit>
+		<Unit filename="/home/timofey/CLionProjects/Coursera/date.h">
+			<Option target="Coursera"/>
+		</Unit>
 		<Unit filename="/home/timofey/CLionProjects/Coursera/main.cpp">
+			<Option target="Coursera"/>
+		</Unit>
+		<Unit filename="/home/timofey/CLionProjects/Coursera/node.cpp">
+			<Option target="Coursera"/>
+		</Unit>
+		<Unit filename="/home/timofey/CLionProjects/Coursera/node.h">
+			<Option target="Coursera"/>
+		</Unit>
+		<Unit filename="/home/timofey/CLionProjects/Coursera/token.cpp">
+			<Option target="Coursera"/>
+		</Unit>
+		<Unit filename="/home/timofey/CLionProjects/Coursera/token.h">
 			<Option target="Coursera"/>
 		</Unit>
 		<Unit filename="/home/timofey/CLionProjects/Coursera/CMakeLists.txt">
