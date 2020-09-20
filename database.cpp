@@ -52,7 +52,7 @@ int Database::RemoveIf(const function<bool(Date, string)> &pred) {
 }
 
 Note Database::Last(Date date) const {
-  auto last = upper_bound(notes.begin(), notes.end(), Note(date, ""));
+  auto last = notes.upper_bound(Note(date, ""));
   if (last == notes.begin()) {
     throw(invalid_argument(""));
   }
