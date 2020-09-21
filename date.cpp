@@ -18,7 +18,7 @@ Date ParseDate(std::istream &is) {
   return Date(year, month, day);
 };
 
-bool operator>(Date date1, Date date2) {
+bool operator>(const Date &date1, const Date &date2) {
   if (date1.Year == date2.Year) {
     if (date1.Month == date2.Month) {
       return date1.Day > date2.Day;
@@ -29,7 +29,7 @@ bool operator>(Date date1, Date date2) {
     return date1.Year > date2.Year;
   }
 }
-bool operator<(Date date1, Date date2) {
+bool operator<(const Date &date1, const Date &date2) {
   if (date1.Year == date2.Year) {
     if (date1.Month == date2.Month) {
       return date1.Day < date2.Day;
@@ -40,7 +40,7 @@ bool operator<(Date date1, Date date2) {
     return date1.Year < date2.Year;
   }
 }
-std::ostream &operator<<(std::ostream &os, Date date) {
+std::ostream &operator<<(std::ostream &os, const Date& date) {
   if (!(date.Year / 1000)) {
     if (!(date.Year / 100)) {
       if (!(date.Year / 10)) {
@@ -69,10 +69,10 @@ std::ostream &operator<<(std::ostream &os, Date date) {
   return os;
 }
 
-bool operator==(Date date1, Date date2) {
+bool operator==(const Date &date1, const Date &date2) {
   return !(date1 < date2) && !(date2 < date1);
 }
-bool operator!=(Date date1, Date date2) {
+bool operator!=(const Date &date1, const Date &date2) {
   return date1 < date2 || date1 > date2;
 }
 

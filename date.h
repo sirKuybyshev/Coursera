@@ -15,11 +15,11 @@ public:
   Date(int year, int month, int day);
   Date() = default;
 
-  friend bool operator<(Date date1, Date date2);
-  friend bool operator>(Date date1, Date date2);
-  friend std::ostream &operator<<(std::ostream &os, Date date);
-  friend bool operator!=(Date date1, Date date2);
-  friend bool operator==(Date date1, Date date2);
+  friend bool operator<(const Date &date1, const Date &date2);
+  friend bool operator>(const Date &date1, const Date &date2);
+  friend std::ostream &operator<<(std::ostream &os, const Date &date);
+  friend bool operator!=(const Date &date1, const Date &date2);
+  friend bool operator==(const Date &date1, const Date &date2);
 };
 
 Date ParseDate(std::istream &is);
